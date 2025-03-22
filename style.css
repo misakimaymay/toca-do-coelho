@@ -1,2 +1,11 @@
-h1{color:red}
-body{background-color: blanchedalmond;}
+body {
+    font-family:'Times New Roman', Times, serif;
+    color:black;
+    background-color: #e6e6fa;
+}
+span {
+    color: #9370db;
+}
+    p {
+        text-decoration-color:#9370db;
+    }
