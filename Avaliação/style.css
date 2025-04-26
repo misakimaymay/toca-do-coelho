@@ -3,6 +3,11 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #800404;
     background-color: black;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    flex-direction: column;
 }
 .apresentacao {
     display: flex;
@@ -12,9 +17,10 @@ body {
 
 #principal {
     display: flex;
+    margin: auto;
     box-sizing: border-box;
     align-items: center; 
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .apresentacao_titulo {
@@ -62,4 +68,15 @@ body {
 }
 .imagem {
     width: 450px;
+}
+header {
+    color:#800404;
+    width: 1872px;
+    background-color: #800404;
+}
+
+footer {
+    color:#800404;
+    width: 1872px;
+    background-color: #800404;
 }
