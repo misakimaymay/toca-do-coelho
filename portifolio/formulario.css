@@ -1,0 +1,10 @@
+body {
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    background-color: aliceblue;
+    color:black;
+}
+
+input {
+  background-color: beige;
+}

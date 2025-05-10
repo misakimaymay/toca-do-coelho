@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="tab_form">
+                <form action="">
+                    <form action="" section="post" onsubmit="script.js">
+                    <p><label for="nome">Insira seu nome:</label>
+                    <input type="text" name="nome" id="nome"></p>
+                    <p><label for="email">Digite seu email:</label>
+                    <input type="text" name="email" id="email"></p>
+                    <p><label for="fone">Digite seu número de telefone:</label>
+                    <input type="text" name="fone" id="fone"></p>
+                    <p><label for="mensagem">Deixe um recado:</label>
+                    <input type="text" name="mensagem" id="mensagem"></p>
+                    <p><label for="numeric">Digite sua idade:</label>
+                    <input type="numeric" name="idade" id="idade"></p>
+                    <p><label for="text">Nos conte qual é seu meio de contato preferido:</label>
+                    <input type="text" name="tp_contato" id="tp_contato"></p>
+                    <button type="submit" class="botao">Enviar</button>
+                    <button type="reset" class="botao">Limpar</button>
+                </form>
+            </td>
+            <td class="tab_grid">
+                <table>
+                    <thead>
+                        <tr>
+                        <th>nome</th>
+                        <th>email</th>
+                        <th>fone</th>
+                        <th>mensagem</th>
+                        <th>idade</th>
+                        <th>tipo contato</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td class="campo"></td>
+                        <td class="campo"></td>
+                        <td class="campo"></td>
+                        <td class="campo"></td>
+                        <td class="campo"></td>
+                        <td class="edt_del"></td>
+                        <input type="" name="edição" id="edicao">
+                        <input type="" name="edição" id="edicao">
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script>
+        let usuario = "May"
+        let aviso="Você está na página de formulário"
+        let ano = 2025;
+
+        if(usuario === null){
+            alert('Dado inválido!')
+        } 
+
+        alert(aviso + ' de ' + usuario + ' em ' + ano)
+    </script>
+</body>
+</html>
