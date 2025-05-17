@@ -1,71 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="formulario.css">
-    <title>Formulário</title>
+    <title>Formulário de Contato</title>
 </head>
 <body>
     <table>
         <tr>
             <td class="tab_form">
-                <form action="">
-                    <form action="" section="post" onsubmit="script.js">
-                    <p><label for="nome">Insira seu nome:</label>
-                    <input type="text" name="nome" id="nome"></p>
-                    <p><label for="email">Digite seu email:</label>
-                    <input type="text" name="email" id="email"></p>
-                    <p><label for="fone">Digite seu número de telefone:</label>
-                    <input type="text" name="fone" id="fone"></p>
-                    <p><label for="mensagem">Deixe um recado:</label>
-                    <input type="text" name="mensagem" id="mensagem"></p>
-                    <p><label for="numeric">Digite sua idade:</label>
-                    <input type="numeric" name="idade" id="idade"></p>
-                    <p><label for="text">Nos conte qual é seu meio de contato preferido:</label>
-                    <input type="text" name="tp_contato" id="tp_contato"></p>
-                    <button type="submit" class="botao">Enviar</button>
-                    <button type="reset" class="botao">Limpar</button>
+                <form action="" method="post" onsubmit="contato.Enviar()">
+                    <label for="name">Nome completo</label><br>
+                    <input type="text" name="name" id="name" placeholder="Insira seu nome completo"><br>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" name="email" id="email" placeholder="Insira seu e-mail"><br>
+                    <label for="tel">Fone</label><br>
+                    <input type="tel" name="tel" id="tel" maxlength="15" pattern="\(\d{2}) \d{5}-\d{4}" placeholder="Insira seu número de telefone"><br>
+                    <label for="message">Mensagem</label><br>
+                    <textarea name="message" id="message" rows="1"></textarea>
+                    <label for="age">Idade</label><br>
+                    <input type="number" name="age" id="idade" min="0" max="100" placeholder="Insira sua idade"><br>
+                    <label for="tel_tip">Tipo contato</label><br>
+                    <!-- <input type="text" name="tel_tip" id="tel_tip" placeholder="Insira seu tipo de contato"><br> -->
+                    <input type="radio" name="instagram" id="instagram">Instagram
+                    <input type="radio" name="whatsapp" id="whatsapp">WhatsApp
+                    <button type="submit" class="button">Enviar</button><br>
+                    <button type="reset" class="button">Limpar</button><br>
                 </form>
             </td>
             <td class="tab_grid">
                 <table>
                     <thead>
                         <tr>
-                        <th>nome</th>
-                        <th>email</th>
-                        <th>fone</th>
-                        <th>mensagem</th>
-                        <th>idade</th>
-                        <th>tipo contato</th>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Fone</th>
+                            <th>Mensagem</th>
+                            <th>Idade</th>
+                            <th>Tipo Contato</th>
+                            <th>Editar&Deletar</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                        <td class="campo"></td>
-                        <td class="campo"></td>
-                        <td class="campo"></td>
-                        <td class="campo"></td>
-                        <td class="campo"></td>
-                        <td class="edt_del"></td>
-                        <input type="" name="edição" id="edicao">
-                        <input type="" name="edição" id="edicao">
+                            <td class="field"></td>
+                            <td class="field"></td>
+                            <td class="field"></td>
+                            <td class="field"></td>
+                            <td class="field"></td>
+                            <td class="field"></td>
+                            <td class="edt_del">
+                                <input type="submit" name="edition" id="edition">
+                                <input type="reset" name="delete" id="delete">
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </td>
         </tr>
     </table>
-    <script>
-        let usuario = "May"
-        let aviso="Você está na página de formulário"
-        let ano = 2025;
 
-        if(usuario === null){
-            alert('Dado inválido!')
-        } 
-
-        alert(aviso + ' de ' + usuario + ' em ' + ano)
-    </script>
+    <script type="text/javascript" src="formulario.js"></script>
 </body>
 </html>
